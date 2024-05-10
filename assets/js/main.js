@@ -53,11 +53,12 @@ $(document).ready(() => {
 
         let removeButton = $("<button>").addClass("remove-button").html("&times;");
         removeButton.on("click", function () {
+
           filenameSpan.remove();
           removeButton.remove();
+
           if ($(".image-area .file-name").length === 0) {
             $(".image-area").css("display", "none");
-            $(".label-content").css("display", "none");
           }
         });
 
