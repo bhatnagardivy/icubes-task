@@ -55,15 +55,17 @@ $(document).ready(() => {
 
         let removeButton = $("<button>").addClass("remove-button").html("&times;");
         removeButton.on("click", function () {
-
           filenameSpan.remove();
           removeButton.remove();
+
+          $("input[type='file']").val('');
 
           if ($(".image-area .file-name").length === 0) {
             $(".image-area").css("display", "none");
             $("#proceedContinueButton").prop("disabled", true);
           }
         });
+
 
         $(".image-area").append(filenameSpan, removeButton);
         $(".image-area").css("display", "block");
@@ -124,7 +126,6 @@ $(document).ready(() => {
     $("#firstScreen").css("display", "none");
     $("#secondScreen").css("display", "none");
     $("#lastScreen").css("display", "none");
-    $(".image-area").html('<div class="image-area"></div>');
     $(".image-area").css("display", "none");
   });
 });

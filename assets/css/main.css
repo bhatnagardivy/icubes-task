@@ -26,7 +26,6 @@ body {
   font-weight: 600;
   padding: 15px 35px;
   background-color: #D32F2F;
-  box-shadow: 10px;
   color: #fff;
   border: 0px;
   cursor: pointer;
@@ -217,20 +216,58 @@ body {
   font-size: 18px;
 }
 
+.custom-button {
+  width: 50%;
+  padding: 10px;
+  box-shadow: 10px;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  margin: 20px auto 10px;
+}
+
+
 /* Other devices */
 
 @media only screen and (max-width: 425px) {
+  /* First screen */
+
   .popup-container {
     position: absolute;
     background-color: #fff;
     width: 90%;
     height: auto;
-    top: 20%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
   .popup-header p {
     font-size: 15px;
+  }
+
+  .popup-body .row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  /* Last Screen */
+  #lastScreen {
+    width: 90%;
+  }
+
+  .confirm-message {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  #lastScreen .popup-body .column {
+    padding: 0px;
   }
 }
