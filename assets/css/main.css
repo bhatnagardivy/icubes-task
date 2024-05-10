@@ -12,6 +12,8 @@ body {
   height: 100%;
 }
 
+/* First Screen code */
+
 .button-container {
   display: flex;
   height: 100vh;
@@ -144,6 +146,27 @@ body {
   border-radius: 4px;
   margin: 20px auto 10px;
 }
+
+/* Second Screen code  */
+.left-arrow {
+  font-size: 24px;
+  cursor: pointer;
+  float: left;
+  color: #000;
+  margin: 10px;
+}
+
+/* Fourth Screen code */
+#lastScreen {
+  width: 40%;
+}
+
+.confirm-message {
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Other devices */
 
 @media only screen and (max-width: 425px) {
   .popup-container {

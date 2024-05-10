@@ -16,6 +16,7 @@
 
   <div class="popup" id="popup">
     <span class="close" id="closeButton">&times;</span>
+    <!-- First Screen Code starts from here -->
     <div class="popup-container" id="firstScreen">
       <div class="popup-header">
         <p>How would you like to design your Badgets button</p>
@@ -43,38 +44,49 @@
         </div>
       </div>
     </div>
+    <!-- First screen code ends -->
 
+    <!-- Second Screen code starts from here -->
     <div class="popup-container" id="secondScreen">
       <div class="popup-header">
-        <p>How would you like to design your Badgets button</p>
+        <span class="left-arrow" id="backButton">&larr;</span>
+        <p>Upload Custom Image</p>
       </div>
 
       <div class="popup-body">
-        <div class="row">
-          <div class="column">
-            <p>Upload a full design</p>
-            <div>
-              <small>- Have a complete design</small>
-              <small>- Have your own design</small>
-            </div>
-            <button type="button" id="uploadDesign" class="button">Upload Design</button>
-          </div>
-
-          <div class="column">
-            <p>Design here online</p>
-            <div>
-              <small>- Already have your concept</small>
-              <small>- Customize every detail</small>
-            </div>
-            <button type="button" class="button">Design Now</button>
-          </div>
+        <div class="imageArea">
+          <p>
+            Drag your image here or <button>browse</button>
+            <input type="file" accept="image/*" />
+          </p>
         </div>
       </div>
     </div>
-  </div>
+    <!-- Second screen code ends here -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="assets/js/main.js"></script>
+    <!-- Fourth Screen code starts from here -->
+    <div class="popup-container" id="lastScreen">
+      <div class="popup-header">
+        <p>Are you sure to cancel this panel?</p>
+      </div>
+
+      <div class="popup-body">
+        <p class="confirm-message">Are you sure to cancel this panel?</p>
+        <div class="row">
+          <div class="column">
+            <button type="button" class="button">Cancel</button>
+          </div>
+          <div class="column">
+            <button type="button" id="proceedButton" class="button">Proceed</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- End of fourth screen code -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
