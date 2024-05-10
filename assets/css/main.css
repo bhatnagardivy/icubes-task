@@ -240,7 +240,7 @@ body {
     height: auto;
     top: 60%;
     left: 50%;
-    transform: translate(-30%, -50%);
+    transform: translate(-50%, -30%);
   }
 
   .popup-header p {
