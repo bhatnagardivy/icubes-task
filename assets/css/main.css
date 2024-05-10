@@ -3,3 +3,67 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.button-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-button {
+  font-size: 16px;
+  padding: 15px 35px;
+  background-color: #D32F2F;
+  box-shadow: 10px;
+  color: #fff;
+  border: 0px;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.popup-button:hover {
+  background-color: #B71C1C;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+}
+
+.popup-container {
+  position: absolute;
+  background-color: #fff;
+  width: 60%;
+  height: auto;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  font-size: 46px;
+  cursor: pointer;
+  float: right;
+  margin: 20px 20px;
+  color: #eee;
+}
+
+.popup-header p {
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px 0px;
+}
