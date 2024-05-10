@@ -37,6 +37,8 @@ $(document).ready(() => {
     $("input").click();
   });
 
+  $("#proceedContinueButton").prop("disabled", true);
+
   $("input").on("change", (e) => {
     e.preventDefault();
 
@@ -59,12 +61,14 @@ $(document).ready(() => {
 
           if ($(".image-area .file-name").length === 0) {
             $(".image-area").css("display", "none");
+            $("#proceedContinueButton").prop("disabled", true);
           }
         });
 
         $(".image-area").append(filenameSpan, removeButton);
         $(".image-area").css("display", "block");
         $(".label-content").css("display", "block");
+        $("#proceedContinueButton").prop("disabled", false);
       } else {
         alert("This is not an image file. Please upload a valid image file.");
       }
@@ -96,12 +100,14 @@ $(document).ready(() => {
 
         if ($(".image-area .file-name").length === 0) {
           $(".image-area").css("display", "none");
+          $("#proceedContinueButton").prop("disabled", true);
         }
       });
 
       $(".image-area").append(filenameSpan, removeButton);
       $(".image-area").css("display", "block");
       $(".label-content").css("display", "block");
+      $("#proceedContinueButton").prop("disabled", false);
     } else {
       alert("This is not an image file. Please upload a valid image file.");
     }
@@ -118,6 +124,8 @@ $(document).ready(() => {
     $("#firstScreen").css("display", "none");
     $("#secondScreen").css("display", "none");
     $("#lastScreen").css("display", "none");
+    $(".image-area").html('<div class="image-area"></div>');
+    $(".image-area").css("display", "none");
   });
 });
 
