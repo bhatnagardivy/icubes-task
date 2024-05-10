@@ -230,7 +230,7 @@ body {
 
 /* Other devices */
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 480px) {
   /* First screen */
 
   .popup-container {
@@ -251,6 +251,96 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+
+  /* Last Screen */
+  #lastScreen {
+    width: 90%;
+  }
+
+  .confirm-message {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  #lastScreen .popup-body .column {
+    padding: 0px;
+  }
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  /* First screen */
+
+  .popup-container {
+    position: absolute;
+    background-color: #fff;
+    width: 90%;
+    height: auto;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .column div small {
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 4px 0px;
+    font-size: 12px;
+  }
+
+  .button {
+    width: 50%;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px;
+    background-color: transparent;
+    box-shadow: 10px;
+    color: #D32F2F;
+    border: 2px solid #D32F2F;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    margin: 20px auto 10px;
+  }
+
+  .column p {
+    font-weight: 600;
+    font-size: 16px;
+    padding: 4px 0px;
+    text-align: center;
+  }
+
+  .button:hover {
+    width: 50%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    background-color: #D32F2F;
+    box-shadow: 10px;
+    color: #fff;
+    border: 0px;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    margin: 20px auto 10px;
+  }
+
+  .popup-header p {
+    font-size: 15px;
+  }
+
+  .popup-body .row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
   }
 
   .column {
