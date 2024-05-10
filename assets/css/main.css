@@ -156,6 +156,56 @@ body {
   margin: 10px;
 }
 
+.image-drop-area {
+  display: flex;
+  margin: 30px;
+  border-radius: 5px;
+  border: 2px dashed #bdbdbd;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+}
+
+.label-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.label-content p {
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+.label-content small {
+  color: #616161;
+}
+
+.browse-button {
+  color: #D32F2F;
+  cursor: pointer;
+}
+
+.proceed-continue-button {
+  margin: 0px auto 20px;
+  display: block;
+}
+
+.image-area {
+  display: none;
+  background: #ffebee;
+  padding: 12px 0px 12px 10px;
+  margin: 30px;
+}
+
+.remove-button {
+  float: right;
+  background: transparent;
+  border: 0px;
+  font-size: 21px;
+  padding: 0px 12px;
+}
+
 /* Fourth Screen code */
 #lastScreen {
   width: 40%;

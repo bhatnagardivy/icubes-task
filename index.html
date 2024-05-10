@@ -46,7 +46,7 @@
     </div>
     <!-- First screen code ends -->
 
-    <!-- Second Screen code starts from here -->
+    <!-- Second Screen & third screen code starts from here -->
     <div class="popup-container" id="secondScreen">
       <div class="popup-header">
         <span class="left-arrow" id="backButton">&larr;</span>
@@ -54,15 +54,24 @@
       </div>
 
       <div class="popup-body">
-        <div class="imageArea">
-          <p>
-            Drag your image here or <button>browse</button>
-            <input type="file" accept="image/*" />
-          </p>
+        <div class="image-drop-area" id="imageArea">
+          <div class="label-content">
+            <p>Drag your image here or <span class="browse-button">browse</span></p>
+            <input type="file" accept="image/*" hidden />
+            <small>Supports jpg, jpeg or png</small>
+          </div>
+        </div>
+
+        <div class="image-area">
+        </div>
+
+        <div>
+          <button type="button" id="proceedContinueButton" class="popup-button proceed-continue-button">Proceed to
+            Continue</button>
         </div>
       </div>
     </div>
-    <!-- Second screen code ends here -->
+    <!-- Second screen & third screen code ends here -->
 
     <!-- Fourth Screen code starts from here -->
     <div class="popup-container" id="lastScreen">
